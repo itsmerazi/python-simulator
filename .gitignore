@@ -1,4 +1,5 @@
 #Project Wide
+local.env
 .idea
 certs/
 config/
