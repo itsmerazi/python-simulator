@@ -1,0 +1,12 @@
+certs/
+config/
+*.pem
+*.key
+local.env
+.venv/
+.git/
+tests/
+tools/
+**/__pycache__/
+*.pyc
+.pytest_cache/
