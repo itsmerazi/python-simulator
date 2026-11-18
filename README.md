@@ -14,7 +14,7 @@ That is how smart home gadgets, delivery robots and factory machines are run tod
 | --- | --- | --- |
 | Python engine (this repo) | EC2, Docker | Done, running continuously |
 | AWS IoT Core | AWS | Configured |
-| React dashboard | S3 + CloudFront | In development (separate repo) |
+| React dashboard | S3 + CloudFront | Done, live ([react-web-visualizer](https://github.com/itsmerazi/react-web-visualizer)) |
 | Android controller | Phone / emulator | In development (separate repo) |
 
 ## How it works
@@ -63,6 +63,6 @@ Certificates and `local.env` are git-ignored. Never commit keys.
 
 ## Status and next steps
 
-This repo is the engine, and it is complete and running continuously on EC2. The React dashboard (S3 + CloudFront) and the Android controller are developed in separate repositories and will be linked here once they are public. End-to-end latency measurements will follow.
+This repo is the engine, and it is complete and running continuously on EC2. The React dashboard is also done: it is served over HTTPS by CloudFront from a private S3 bucket and shows the robot live, read-only. Its code is in [react-web-visualizer](https://github.com/itsmerazi/react-web-visualizer). Next is the Android controller, developed in a separate repository and linked here once it is public. End-to-end latency measurements will follow.
 
 Questions, ideas and feedback are welcome. Feel free to open an issue.
